@@ -25,11 +25,12 @@ import com.zzdayss.yunyou.dao.UserDao;
 public class LoginActivity extends Activity {
     private static final String TAG = "mysql-party-LoginActivity";
     private String realCode;
-    public String userName = null;
+    public  String userName = null;
     private EditText EditTextAccount,EditTextPassword;
     private EditText mEtloginactivityPhonecodes;
     private ImageView mIvloginactivityShowcode;
     private SharedPreferences sp;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,13 @@ public class LoginActivity extends Activity {
         realCode = Code.getInstance().getCode().toLowerCase();
         sp = getSharedPreferences("Personal", MODE_PRIVATE);
         setStatusBar();
+
+        findViewById(R.id.back_button0).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     private void initView() {
@@ -87,7 +95,6 @@ public class LoginActivity extends Activity {
                     sp.edit().putString("userAccount",EditTextAccount.getText().toString()).apply();
                     sp.edit().putString("userPassword",EditTextPassword.getText().toString()).apply();
                     sp.edit().putString("getuserName",userName).apply();
-
                     Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);

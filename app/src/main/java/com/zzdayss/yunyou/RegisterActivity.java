@@ -106,7 +106,7 @@ public class RegisterActivity extends Activity {
             } else if(msg.what == 1) {
                 Toast.makeText(getApplicationContext(),"该账号已经存在，请换一个账号",Toast.LENGTH_LONG).show();
             }  else if(msg.what == 3) {
-            Toast.makeText(getApplicationContext(),"请将所有信息填写完整",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"请将所有信息填写完整",Toast.LENGTH_LONG).show();
             } else if(msg.what == 4) {
                 Toast.makeText(getApplicationContext(), "验证码错误!", Toast.LENGTH_LONG).show();
             } else if(msg.what == 2) {

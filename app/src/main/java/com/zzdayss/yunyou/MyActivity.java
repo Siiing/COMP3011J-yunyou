@@ -1,25 +1,19 @@
 package com.zzdayss.yunyou;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.zzdayss.yunyou.dao.UserDao;
@@ -72,13 +66,22 @@ public class MyActivity extends Activity {
         }
         bottom();
         setStatusBar();
+
+        ImageButton friendsButton = findViewById(R.id.friendsButton);
+        friendsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyActivity.this, FriendsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
     public void logout(View veiw){
         showMsg("退出成功");
         new Thread(() -> {
-        UserDao userDao = new UserDao();
+            UserDao userDao = new UserDao();
             userDao.logout(userAccount);
         }).start();
         sp.edit().remove("getuserName").apply();
@@ -100,7 +103,7 @@ public class MyActivity extends Activity {
         if("".equals(userAccount)&&"".equals(userPassword)&&"".equals(getuserName)){
             showMsg("请先登录");
         }else{
-            startActivity(new Intent(getApplicationContext(),feedbackActivity.class));
+            startActivity(new Intent(getApplicationContext(), FeedbackActivity.class));
         }
     }
 

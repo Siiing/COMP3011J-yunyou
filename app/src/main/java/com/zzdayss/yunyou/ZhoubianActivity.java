@@ -32,6 +32,7 @@ import com.amap.api.services.poisearch.PoiSearch;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.zzdayss.yunyou.adapter.InputTipsAdapter;
 import com.zzdayss.yunyou.adapter.ZhoubianAdapter;
+import com.zzdayss.yunyou.dao.TripDao;
 import com.zzdayss.yunyou.dao.UserDao;
 import com.zzdayss.yunyou.entity.Trip;
 import com.zzdayss.yunyou.util.Constants;
@@ -147,20 +148,20 @@ public class ZhoubianActivity extends Activity implements PoiSearch.OnPoiSearchL
                                     +poiItem.getAdName()+","//区
                                     +poiItem.getSnippet()+"\n");
                             mData.add(bean);
-                            }
+                        }
                         poiAdapter = new ZhoubianAdapter(mData, mContext);
                         zhoubianlist.setAdapter(poiAdapter);
                         poiAdapter.notifyDataSetChanged();
-                        } else {
+                    } else {
                         ToastUtil.showerror(this, arg1);
                     }
 
 //                        mAdapter.notifyDataSetChanged();  //解析成功更新list布局
 
-                    }
                 }
             }
         }
+    }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -238,8 +239,8 @@ public class ZhoubianActivity extends Activity implements PoiSearch.OnPoiSearchL
 
     public void trip(){
         new Thread(() -> {
-            UserDao userDao = new UserDao();
-            List<Trip> trip = userDao.gettrip(userAccount);
+            TripDao tripDao = new TripDao();
+            List<Trip> trip = tripDao.gettrip(userAccount);
             lists = new ArrayList<>();
             for(int i= 0;i<trip.size();i++){
                 Map<String,Object> map =new HashMap<>();

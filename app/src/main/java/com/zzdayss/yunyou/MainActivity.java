@@ -439,33 +439,6 @@ public class MainActivity extends Activity implements
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public void landian(){
         //定义一个UiSettings对象
         UiSettings mUiSettings = aMap.getUiSettings();//实例化UiSettings类对象
@@ -659,6 +632,17 @@ public class MainActivity extends Activity implements
                 stringBuffer.append("地址：").append(Address).append("\n");
                 tvContent.setText(stringBuffer.toString());
 
+                if (EvaluateActivity.selectFlag){
+                    EvaluateActivity.selectFlag = false;
+                    EvaluateActivity.address = Address;
+                    Intent intent = new Intent(MainActivity.this,EvaluateActivity.class);
+                    startActivity(intent);
+                }else if (TripDetailActivity.selectFlag){
+                    TripDetailActivity.selectFlag = false;
+                    TripDetailActivity.address = Address;
+                    Intent intent = new Intent(MainActivity.this,TripDetailActivity.class);
+                    startActivity(intent);
+                }
             }
 
         } else {
@@ -897,7 +881,4 @@ public class MainActivity extends Activity implements
         //在activity执行onSaveInstanceState时执行mMapView.onSaveInstanceState (outState)，保存地图当前的状态
         mapView.onSaveInstanceState(outState);
     }
-
-
-
 }
