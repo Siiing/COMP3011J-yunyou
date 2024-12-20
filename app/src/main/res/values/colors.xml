@@ -13,4 +13,12 @@
     <color name="darkgrey"> #C0C0C0</color>
     <color name="grey"> #ebebeb</color>
     <color name="text_hint">#6C6C6C</color>
+
+    <color name="textblack"> #000000</color>
+    <color name="textred"> #D13030</color>
+    <color name="textorange">#EC8E12</color>
+    <color name="textyellow">#ECC812</color>
+    <color name="textgreen">#4BB323</color>
+    <color name="textblue">#237CB3</color>
+    <color name="textpurple">#4C23B3</color>
 </resources>
