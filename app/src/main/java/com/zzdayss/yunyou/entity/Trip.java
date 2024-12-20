@@ -2,6 +2,7 @@ package com.zzdayss.yunyou.entity;
 
 public class Trip {
 
+    private int id;
     private String departure;
     private String destination;
     private String date;
@@ -13,6 +14,14 @@ public class Trip {
         this.departure = departure;
         this.destination = destination;
         this.date = date;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getDeparture() {
