@@ -12,6 +12,16 @@
         android:scaleType="fitXY"
         android:src="@mipmap/a002" />
 
+    <Button
+        android:id="@+id/back_button0"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+         />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,7 +60,7 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:ems="10"
-                    android:hint="请输入手机号"
+                    android:hint="please input account"
                     android:inputType="phone"
                     android:textColor="#000000"
                     android:textColorHint="#bcbcbc"
@@ -83,7 +93,7 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:ems="10"
-                    android:hint="请输入密码"
+                    android:hint="please input password"
                     android:inputType="textPassword"
                     android:textColor="#000000"
                     android:textColorHint="#bcbcbc"
@@ -122,7 +132,7 @@
                         android:layout_marginRight="10dp"
                         android:layout_weight="1"
                         android:background="@null"
-                        android:hint="请输入验证码"
+                        android:hint="verification code"
                         android:singleLine="true"
                         android:textColor="#000000"
                         android:textColorHint="#bcbcbc"
@@ -160,7 +170,7 @@
             android:textColor="#ffffff"
             android:textSize="24sp"
             android:onClick="login"
-            android:text="登录" />
+            android:text="Login" />
         <Button
             android:id="@+id/tv_loginactivity_register"
             android:layout_width="match_parent"
@@ -172,7 +182,7 @@
             android:textColor="#ffffff"
             android:textSize="24sp"
             android:onClick="reg"
-            android:text="注册" />
+            android:text="Register" />
 
     </LinearLayout>
 </RelativeLayout>

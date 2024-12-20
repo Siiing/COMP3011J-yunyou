@@ -23,51 +23,105 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="出发地："
+                android:text="from："
                 android:textColor="#000"
                 android:textSize="15sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold">
+            </TextView>
+
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
-                android:textSize="14sp"></TextView>
+                android:textSize="14sp">
+            </TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-----目的地："
+                android:text="-----to："
                 android:textColor="#000"
                 android:textSize="15sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold">
+            </TextView>
+
             <TextView
                 android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
-                android:textSize="14sp"></TextView>
+                android:textSize="14sp">
+            </TextView>
+
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="出发时间："
+            android:text="start time："
             android:textColor="#000"
             android:textSize="15sp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold">
+        </TextView>
+
         <TextView
             android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000"
-            android:textSize="14sp"></TextView>
+            android:textSize="14sp">
+        </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/plan_text"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="plan"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+
+            <TextView
+                android:id="@+id/delete_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="delete"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>

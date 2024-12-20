@@ -5,67 +5,50 @@
     android:layout_height="match_parent"
     android:background="@color/grey"
     android:orientation="vertical"
-    tools:context=".feedbackActivity">
+    tools:context=".FeedbackActivity">
+
+    <Button
+        android:id="@+id/back_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/shapelogin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+    </Button>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="用户反馈"
+        android:text="Evaluate Places"
         android:textSize="30dp"
         android:textColor="@color/black"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:layout_marginHorizontal="20dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="反馈内容："
-        android:layout_marginTop="50dp"
-        android:layout_marginHorizontal="20dp"/>
 
-    <EditText
-        android:id="@+id/feedback"
+    <ListView
+        android:id="@+id/evaluate_list"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="20dp"
-        android:padding="10dp"
-        android:gravity="top"
-        android:background="@drawable/shape"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="30dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="星级评价："
-            android:layout_marginLeft="20dp"/>
-
-        <RatingBar
-            android:id="@+id/ratingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:indeterminate="false"
-            android:numStars="5"
-            android:layout_marginLeft="20dp"
-            android:rating="0"
-            android:stepSize="0.5"/>
-
-    </LinearLayout>
-
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:background="@drawable/shapelogin"
+        android:layout_height="500dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:onClick="submit"
-        android:text="提交" />
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shapemsg" />
+
+        <Button
+            android:id="@+id/add_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/shapelogin"
+            android:layout_marginTop="20dp"
+            android:text="Add Evaluation" />
 
 </LinearLayout>

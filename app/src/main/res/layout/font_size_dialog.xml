@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/decreaseFontSizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_text_decrease_24"
+        android:contentDescription="Decrease font size"
+        android:background="?attr/selectableItemBackground" />
+
+
+    <ImageButton
+        android:id="@+id/increaseFontSizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_text_increase_24"
+        android:contentDescription="Increase font size"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginHorizontal="16dp"/>
+
+    <TextView
+        android:id="@+id/fontSizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+</LinearLayout>

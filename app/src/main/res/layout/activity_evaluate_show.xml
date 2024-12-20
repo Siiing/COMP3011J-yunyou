@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context=".EvaluateShowActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/shapelogin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+        </Button>
+
+        <Button
+            android:id="@+id/invite_friends_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/shapelogin"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            >
+        </Button>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evaluate Places"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/address_input_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <jp.wasabeef.richeditor.RichEditor
+        android:id="@+id/feedback_show"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageButton
+            android:id="@+id/photoButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_camera_alt_18"
+            android:layout_marginLeft="20dp">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/OCRButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_g_translate18"
+            android:layout_marginLeft="20dp">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/fontColorButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_color_lens_18"
+            android:layout_marginLeft="20dp">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/fontSizeButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_format_size_18"
+            android:layout_marginLeft="20dp">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <RatingBar
+            android:id="@+id/ratingBar_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:numStars="5"
+            android:layout_marginLeft="20dp"
+            android:rating="0"
+            android:stepSize="0.5"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/delete_evaluation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shapelogin"
+        android:text="DELETE THIS EVALUATION"
+        android:textColor="@color/white"></Button>
+
+</LinearLayout>

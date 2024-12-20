@@ -161,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:layout_toRightOf="@+id/evaluation"
-                android:text="我的行程"
+                android:text="My Trip"
                 android:textSize="14sp" />
 
             <ImageView
@@ -203,7 +203,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:layout_toRightOf="@+id/feedback"
-                android:text="用户反馈"
+                android:text="Evaluation"
                 android:textSize="14sp" />
 
             <ImageView
@@ -246,7 +246,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:layout_toRightOf="@+id/logout"
-                android:text="退出登录"
+                android:text="Logout"
                 android:textSize="14sp" />
 
             <ImageView
@@ -257,6 +257,22 @@
                 android:src="@drawable/ic_arrow" />
         </RelativeLayout>
     </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="500dp"
+        android:layout_alignParentRight="true">
+
+        <ImageButton
+            android:id="@+id/friendsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_supervisor_account_24"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
 <!--    <Button-->
 <!--        android:id="@+id/login"-->
 <!--        android:layout_width="wrap_content"-->

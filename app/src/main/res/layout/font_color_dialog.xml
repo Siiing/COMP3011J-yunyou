@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/textblack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_format_color_text_black"
+        android:contentDescription="font color black"
+        android:background="?attr/selectableItemBackground" />
+
+
+    <ImageButton
+        android:id="@+id/textred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_format_color_text_red"
+        android:contentDescription="font color red"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginLeft="8dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/fontSizeTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="18sp" />-->
+    <ImageButton
+        android:id="@+id/textorange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_format_color_text_orange"
+        android:contentDescription="font color orange"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageButton
+        android:id="@+id/textyellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_format_color_text_yellow"
+        android:contentDescription="font color yellow"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageButton
+        android:id="@+id/textgreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_format_color_text_green"
+        android:contentDescription="font color green"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageButton
+        android:id="@+id/textblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_format_color_text_blue"
+        android:contentDescription="font color blue"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageButton
+        android:id="@+id/textpurple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_format_color_text_purple"
+        android:contentDescription="font color purple"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginLeft="8dp"/>
+</LinearLayout>

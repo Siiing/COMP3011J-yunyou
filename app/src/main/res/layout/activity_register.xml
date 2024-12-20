@@ -20,6 +20,8 @@
         android:layout_height="50dp"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/ic_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
         android:onClick="login" />
 
     <LinearLayout
@@ -66,7 +68,7 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:ems="10"
-                    android:hint="请输入手机号"
+                    android:hint="please input account"
                     android:inputType="phone"
                     android:textColor="#000000"
                     android:textColorHint="#bcbcbc"
@@ -106,7 +108,7 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:ems="10"
-                    android:hint="请输入用户名"
+                    android:hint="please input username"
                     android:inputType="textPersonName"
                     android:textColor="@color/black"
                     android:textColorHint="#bcbcbc"
@@ -146,7 +148,7 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:ems="10"
-                    android:hint="请输入密码"
+                    android:hint="please input password"
                     android:inputType="textPassword"
                     android:textColor="@color/black"
                     android:textColorHint="#bcbcbc"
@@ -184,7 +186,7 @@
                         android:layout_marginRight="10dp"
                         android:layout_weight="1"
                         android:background="@null"
-                        android:hint="请输入验证码"
+                        android:hint="verification code"
                         android:singleLine="true"
                         android:textColor="#000000"
                         android:textColorHint="#bcbcbc" />
@@ -216,7 +218,7 @@
             android:layout_marginRight="18dp"
             android:background="@drawable/shapelogin"
             android:onClick="register"
-            android:text="注册"
+            android:text="register"
             android:textColor="@color/white"
             android:textSize="24sp" />
     </LinearLayout>
