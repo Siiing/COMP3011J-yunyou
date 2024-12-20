@@ -1,11 +1,16 @@
-# --云游APP-updated by Siiing--  
+# --云游APP-updated by Siiing--
 1. Updated the trip page. Users can add new trips and edit them in details
+![img.png](img.png)![img_1.png](img_1.png)
 2. Change the feedback function. Changed from evaluating the app to evaluating the positions. Users can click the site button to jump to the map and search for wants.
+![img_2.png](img_2.png)
 3. Users can upload images from the camera and album. And achieved the OCR function to get texts from images.
-4. Achieved changing the font size and color function.
-5. Achieved interacting with friends function. Users can search the user-id in this app and add friends. Once the person is a friend, users can invite the friends to edit an evaluation together. The content is saved every 10 secs and the content will be shown to both of the users.
-
-
+![img_4.png](img_4.png)![img_3.png](img_3.png) ![img_5.png](img_5.png)
+4. Users can add friends on 'my' page 
+![img_6.png](img_6.png)
+5. Achieved changing the font size and color function. 
+![img_7.png](img_7.png)
+6. Achieved interacting with friends function. Users can search the user-id in this app and add friends. Once the person is a friend, users can invite the friends to edit an evaluation together. The content is saved every 10 secs and the content will be shown to both of the users.
+![img_8.png](img_8.png)![img_9.png](img_9.png)![img_10.png](img_10.png)
 # --云游APP-旅游类地图安卓应用--  
 项目描述：用于旅游前的地图查询以及行程规划  
 采用技术：AndroidStudio、Java、MySQL、SQLite、XML  
